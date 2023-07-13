@@ -103,7 +103,7 @@ foreach ($array as $item) {
 
   if($ignicion){$motor=1;}else{$motor=0;}
 
-  include './odometro.php';
+  include 'odometro.php';
   //include './hmotor.php';
 
 
@@ -134,7 +134,7 @@ foreach ($array as $item) {
     $total[$i]=$json;
 
     $i++;
-    include "./xmlZaldivar.php";
+    include "xmlZaldivar.php";
 }
 
 //echo json_encode($total, http_response_code(200));
