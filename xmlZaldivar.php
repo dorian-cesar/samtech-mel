@@ -20,7 +20,7 @@ curl_setopt_array($curl, array(
     <empresa>cimcmz</empresa>
     <tercero>Tandem</tercero>
     <pat>'.$plate.'</pat>
-    <fn>07/06/2022 16:55:01</fn>
+    <fn>'.$ultima_Conexion.'</fn>
     <lat>'.$lat.'</lat>
     <lon>'.$lng.'</lon>
     <ori>'.$direccion.'</ori>
