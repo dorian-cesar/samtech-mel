@@ -4,7 +4,24 @@
 
 //require_once './login/login-bronces.php';
 
-$cap="b835ef1ecc2a329e0b46cdfa8dcd63c2";
+//$cap="b835ef1ecc2a329e0b46cdfa8dcd63c2";
+
+$user="Zaldivar";
+
+
+$pasw="123";
+
+include "/login/conexion.php";
+
+$consulta="SELECT hash FROM masgps.hash where user='$user' and pasw='$pasw'";
+
+$resutaldo= mysqli_query($mysqli,$consulta);
+
+$data=mysqli_fetch_array($resutaldo);
+
+$hash=$data['hash'];
+
+$cap=$hash;
 
 
 //header("refresh:2");
