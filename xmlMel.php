@@ -1,10 +1,10 @@
 <?php 
 
-
+// CURLOPT_URL => 'http://wspos.samtech.cl/WSP.asmx',
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'http://wspos.samtech.cl/WSP.asmx',
+  CURLOPT_URL => 'https://qa-wshub.tracktec.cl/ws/wspos.wsdl',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -17,7 +17,7 @@ curl_setopt_array($curl, array(
 <datos>
   <movil>
     <pgps>Wit</pgps>
-    <empresa>cimcmz</empresa>
+    <empresa>Mel</empresa>
     <tercero>Tandem</tercero>
     <pat>'.$plate.'</pat>
     <fn>'.$ultima_Conexion.'</fn>

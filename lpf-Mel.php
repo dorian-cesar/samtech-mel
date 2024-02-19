@@ -6,7 +6,7 @@
 
 //$cap="b835ef1ecc2a329e0b46cdfa8dcd63c2";
 
-$user="Zaldivar";
+$user="Mel";
 
 
 $pasw="123";
@@ -151,8 +151,8 @@ foreach ($array as $item) {
     $total[$i]=$json;
 
     $i++;
-    include "xmlZaldivar.php";
+  //  include "xmlZaldivar.php";
 }
 
-//echo json_encode($total, http_response_code(200));
+echo json_encode($total, http_response_code(200));
 
