@@ -1,10 +1,4 @@
 <?php
-//include "./login/login-lascondes.php";
-// include "login/conexion.php";
-
-//require_once './login/login-bronces.php';
-
-//$cap="b835ef1ecc2a329e0b46cdfa8dcd63c2";
 
 $user="Mel";
 
@@ -121,11 +115,11 @@ foreach ($array as $item) {
   if($ignicion){$motor=1;}else{$motor=0;}
 
   include 'odometro.php';
-  //include './hmotor.php';
+  
 
 
 
-
+    
     $json =array (
 
 
@@ -142,17 +136,20 @@ foreach ($array as $item) {
       'ignicion'=>$ignicion,
        'motor'=>$motor,
       'odometro'=>$odometro,
-      //'Hmotor'=>$hmotor,
+      
   
       'ultima-conexion'=> $ultima_Conexion,
       
     );
-
+  
     $total[$i]=$json;
 
+   json_encode($json);
     $i++;
-  //  include "xmlZaldivar.php";
+    include "xmlMel.php";
+   
 }
 
-echo json_encode($total, http_response_code(200));
+//echo json_encode($total, http_response_code(200));
 
+Fin:
