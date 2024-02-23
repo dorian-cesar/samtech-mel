@@ -144,9 +144,11 @@ foreach ($array as $item) {
   
     $total[$i]=$json;
 
-   json_encode($json);
+    json_encode($json);
     $i++;
     include "xmlMel.php";
+
+  
    
 }
 
