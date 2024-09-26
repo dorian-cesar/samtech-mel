@@ -23,7 +23,7 @@ $datos='<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelop
  <hdop>'.$signal_level.'</hdop>
  <odo>'.$odometro.'</odo>
  <eve>47</eve>
- <conductor>No Asignado</conductor>
+ <conductor>'.$fullName.'</conductor>
  <numSAT>14</numSAT>
  <sens1>0</sens1>
  <sens2>0</sens2>
@@ -53,14 +53,14 @@ $array2=array(
 );
 
 curl_setopt_array($curl,$array2);
-
+//echo 
 $response = curl_exec($curl);
 
 curl_close($curl);
 
 
 echo "$plate -> $response";
-//print_r ($array2);
+print_r ($array2);
 
 echo "<br>";
  
